@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="src/css/global.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- FontAwesome -->
+  </head>
+  <body>
+    <main>
+      <div class="hero__container">
+        <div class="hero__image">
+          <img src="src/assets/hero-img.svg" alt="imagem" />
+        </div>
+        <div class="hero__content">
+          <div class="content__header">
+            <p>Bem vindo de volta</p>
+            <h1>Faça login na sua conta</h1>
+          </div>
+          <form action="" class="content__form">
+            <div class="form__inputs">
+              <div class="form__input">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="codelandia@gmail.com"
+                />
+              </div>
+              <div class="form__input">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="form__bottom">
+                <div>
+                  <input type="radio" name="remember" id="remember" />
+                  <label for="remember">Lembre de mim</label>
+                </div>
+                <a href="#">Esqueceu sua senha?</a>
+              </div>
+            </div>
+            <div class="form__buttons">
+              <button>Entrar</button>
+              <button class="google">
+                <i class="fa-brands fa-google"></i>
+                Ou faça login comn o Google
+              </button>
+            </div>
+          </form>
+
+          <div class="content__bottom">
+            <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

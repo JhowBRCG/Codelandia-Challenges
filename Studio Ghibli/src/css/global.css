@@ -1,0 +1,56 @@
+@import url("style.css");
+
+:root {
+  font-size: 62.5%;
+
+  --color-green: #658e76;
+  --color-white: #f9f9f9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
+  background-repeat: no-repeat;
+  color: var(--color-white);
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding-top: 5rem;
+}
+
+main {
+  margin-top: 7rem;
+}
+
+button {
+  border: 0;
+  background: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}

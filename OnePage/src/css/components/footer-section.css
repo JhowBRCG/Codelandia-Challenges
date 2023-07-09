@@ -1,0 +1,45 @@
+footer {
+  padding: 86px 1rem 79px;
+  background: var(--purple-light);
+}
+
+footer h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: var(--gray-dark);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  margin: 6rem auto;
+  gap: 1.5rem;
+}
+
+input {
+  border: 0;
+  border-radius: 0.6rem;
+  padding: 2.1rem 1.5rem;
+}
+
+textarea {
+  border: 0;
+  border-radius: 0.6rem;
+  padding: 2.1rem 1.5rem;
+  min-height: 165px;
+}
+
+form button {
+  margin-top: calc(30px - 15px);
+  cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: rgba(110, 114, 117, 0.74);
+}

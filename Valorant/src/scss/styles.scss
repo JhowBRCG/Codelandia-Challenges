@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "header";
+@import "hero";
+@import "responsive";
+
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+@include mobile-responsive {
+  .container {
+    width: $mobile-width;
+  }
+}
+
+.bg {
+  background: $dark-color;
+  height: 100vh;
+  width: 100%;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.bg.red {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background: $red-color;
+}

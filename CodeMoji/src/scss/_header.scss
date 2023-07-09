@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    color: $dark-color;
+    font-family: "Lora", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+
+    .header__icon {
+      padding: 0.9rem 1rem;
+      background: $white-color;
+      border-radius: 50%;
+      outline: 1px solid $dark-opacity;
+    }
+
+    .header__login {
+      background: $white-color;
+      padding: 1.5rem 4.5rem;
+      color: $dark-color;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 10rem;
+      outline: 1px solid $dark-opacity;
+    }
+
+    .header__login-mobile {
+      padding: 0.9rem 1rem;
+      background: $white-color;
+      border-radius: 50%;
+      outline: 1px solid $dark-opacity;
+      display: none;
+    }
+  }
+}

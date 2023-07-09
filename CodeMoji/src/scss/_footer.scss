@@ -1,0 +1,27 @@
+.footer {
+  background: $dark-opacity;
+  display: flex;
+  gap: 10rem;
+  padding: 5rem;
+
+  &__citation {
+    h3 {
+      color: rgba($dark-color, 0.75);
+      font-family: "Lora", serif;
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-left: 3px solid $blue-color;
+      padding-left: 1rem;
+    }
+
+    p {
+      color: $dark-color;
+      font-size: 1.6rem;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 2.6rem;
+      padding-left: 1rem;
+    }
+  }
+}

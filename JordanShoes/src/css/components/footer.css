@@ -1,0 +1,16 @@
+footer {
+  background: var(--black-light-color);
+  padding: 2rem 0;
+}
+
+.footer-content {
+  max-width: 1920px;
+}
+
+.footer-content p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+@include mobile-responsive {
+  .hero {
+    grid-template-columns: 1fr;
+
+    &__agents {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+}
+
+@include mobile-responsive {
+  .hero__right {
+    display: none;
+  }
+}
+
+@include mobile-responsive {
+  .hero__logo-title {
+    display: none;
+  }
+}
+
+@include mobile-responsive {
+  body {
+    overflow: auto;
+  }
+}

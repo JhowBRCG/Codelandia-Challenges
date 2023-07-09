@@ -1,0 +1,57 @@
+.highlights {
+  padding: 7rem 0 10rem;
+  background: var(--white-color);
+}
+
+.highlights h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: var(--black-light-color);
+  margin-bottom: 1.7rem;
+}
+
+.highlights p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--gray-color);
+}
+
+.wrapper-cards {
+  margin-top: 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  justify-content: center;
+  gap: 2rem 3.8rem;
+  padding: 1rem;
+}
+
+.jordan-card {
+  max-width: 360px;
+  padding: 7rem 7.5rem;
+  background: var(--white-color-200);
+  position: relative;
+  cursor: pointer;
+}
+
+.jordan-card::before {
+  content: "Jordan";
+  position: absolute;
+  display: block;
+  color: var(--white-color);
+  font-size: 2rem;
+  width: calc(100% - 2rem);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.068);
+  padding: 1rem;
+  opacity: 0;
+}
+
+.jordan-card:hover::before {
+  opacity: 1;
+}
+
+.jordan-card img {
+  width: 100%;
+}

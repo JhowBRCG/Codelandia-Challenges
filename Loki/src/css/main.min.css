@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.3;
+  font-family: "B612", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+.hero {
+  background: linear-gradient(#131318, rgba(19, 19, 24, 0.3)),
+    url("../images/background.jpg") no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+.hero .hero__header {
+  text-align: center;
+}
+.hero .hero__header h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hero .hero__header h1 {
+  font-size: 9.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 3.5rem;
+}
+.hero .hero__content {
+  display: flex;
+  -moz-column-gap: 7rem;
+  column-gap: 7rem;
+  margin: 32rem auto 0 auto;
+  justify-content: center;
+}
+.hero__image img {
+  border-radius: 2rem;
+  width: 184px;
+  height: 294px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.hero .movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+}
+.hero .movie__sinopse {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 3.2rem;
+}
+.hero .movie__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 6rem;
+  column-gap: 6rem;
+  row-gap: 1rem;
+}
+.hero .movie__info .movie__time {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.4rem;
+  column-gap: 1.4rem;
+}
+.hero .movie__info .movie__time i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.hero .movie__info .movie__time p {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.hero .movie__info .movie__review {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero .movie__info .movie__review i {
+  font-size: 3.3rem;
+  color: #ffa800;
+}
+.hero .movie__info .movie__review i.empty {
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero .movie__info .movie__date {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.hero .movie__btns {
+  display: flex;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+}
+.hero .movie__btns .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #0072d2;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.hero .movie__btns .btn.trailer {
+  background: #131318;
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 425px) {
+  .hero {
+    position: relative;
+    overflow-y: hidden;
+  }
+  .hero .hero__content {
+    margin: 35rem auto 0 auto;
+  }
+  .hero::before {
+    content: "";
+    width: 100%;
+    height: 40%;
+    background: #19191f;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transform: translateY(100px);
+    border-radius: 25px 25px 0px 0px;
+  }
+  .hero__image {
+    display: none;
+  }
+  .hero .movie {
+    width: auto;
+    z-index: 1;
+  }
+  .hero .movie__sinopse {
+    order: 1;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-top: 2.4rem;
+  }
+  .hero .movie__info {
+    flex-wrap: nowrap;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  .hero .movie__info .movie__time {
+    gap: 0.7rem;
+  }
+  .hero .movie__info .movie__time i {
+    font-size: 1.5rem;
+  }
+  .hero .movie__info .movie__time p {
+    font-size: 1.6rem;
+  }
+  .hero .movie__info .movie__review {
+    gap: 0.5rem;
+  }
+  .hero .movie__info .movie__review i {
+    font-size: 1.6rem;
+  }
+  .hero .movie__info .movie__date {
+    font-size: 1.6rem;
+  }
+  .hero .movie .movie__btns {
+    margin-top: 6rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.08);
+  }
+  .hero .movie .movie__btns .btn {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  section {
+    padding: 2rem;
+  }
+}
+section {
+  min-height: 100vh;
+  padding: 4rem 2rem 1rem 2rem;
+  margin: 0 auto;
+} /*# sourceMappingURL=main.min.css.map */

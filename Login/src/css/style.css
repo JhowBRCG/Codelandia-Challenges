@@ -1,0 +1,145 @@
+main {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  background: linear-gradient(to right, #f7fafc 50%, #fff 50%);
+}
+
+.hero__container {
+  padding: 1rem;
+  display: grid;
+  /* grid-template-areas: ". image content ."; */
+  grid-template-columns: 40% 35%;
+  justify-content: space-around;
+  /* align-items: center; */
+  gap: 20rem;
+}
+
+.hero__image {
+  /* grid-area: image; */
+  align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  .hero__image {
+    display: none;
+  }
+
+  .hero__container {
+    grid-template-columns: 100%;
+  }
+
+  main {
+    background: none;
+  }
+}
+
+.hero__content {
+  /* grid-area: content; */
+}
+
+.content__header {
+  margin-bottom: 4rem;
+}
+
+.content__header p {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: 0.7rem;
+}
+
+.content__header h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: var(--color-dark);
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form__input label {
+  font-family: "Lato" sans-serif;
+  font-weight: 400;
+  color: var(--color-dark);
+}
+
+.form__input input {
+  display: block;
+  width: 100%;
+  padding: 1.7rem 0 1.7rem 2rem;
+  margin-top: 1.1rem;
+  border: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: var(--default-radius);
+}
+
+.form__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__bottom > div {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.form__bottom label,
+a {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--color-dark);
+}
+
+.form__bottom a {
+  color: var(--color-blue);
+}
+
+.form__buttons {
+  margin-top: 2.5rem;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.form__buttons button {
+  width: 100%;
+  border: 0;
+  background: var(--color-green);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: var(--default-radius);
+}
+
+.form__buttons button.google {
+  background: var(--color-dark);
+  gap: 1rem;
+}
+
+.form__buttons button i {
+  font-size: 2rem;
+}
+
+.content__bottom {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.content__bottom p,
+a {
+  font-weight: 400;
+  font-size: 1.6rem;
+}

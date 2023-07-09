@@ -1,0 +1,18 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "header";
+@import "hero";
+@import "footer";
+@import "responsive";
+
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+@include medium-devices {
+  .container {
+    width: $mobile-width;
+  }
+}

@@ -1,0 +1,14 @@
+$golden-color: #ffa800;
+$blue-color: #0072d2;
+$dark-color: #131318;
+$light-color: #ffffff;
+
+$border-color: rgba(196, 196, 196, 0.08);
+
+$main-font: "B612", sans-serif;
+
+@mixin mobile-media {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}

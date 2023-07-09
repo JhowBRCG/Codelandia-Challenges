@@ -1,0 +1,31 @@
+@import url("header.css");
+@import url("main.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --purple-color: #574aeb;
+  --white-color: #ffff;
+  --white-200-color: #f3f5f7;
+  --gray-color: #717171;
+  --gray-dark-color: #1a202c;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+button {
+  border: 0;
+  background: transparent;
+}

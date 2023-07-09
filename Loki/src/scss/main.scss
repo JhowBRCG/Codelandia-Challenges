@@ -1,0 +1,11 @@
+@import "variables";
+@import "reset";
+@import "hero";
+@import "responsive";
+
+section {
+  // width: 100vw;
+  min-height: 100vh;
+  padding: 4rem 2rem 1rem 2rem;
+  margin: 0 auto;
+}

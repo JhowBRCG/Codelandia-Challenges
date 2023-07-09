@@ -1,0 +1,85 @@
+@include mobile-media {
+  .hero {
+    position: relative;
+    overflow-y: hidden;
+
+    .hero__content {
+      margin: 35rem auto 0 auto;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 40%;
+      background: #19191f;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      transform: translateY(100px);
+      border-radius: 25px 25px 0px 0px;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    .movie {
+      width: auto;
+      z-index: 1;
+
+      &__sinopse {
+        order: 1;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        padding-top: 2.4rem;
+      }
+
+      &__info {
+        flex-wrap: nowrap;
+        column-gap: 0;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 4rem;
+
+        .movie__time {
+          gap: 0.7rem;
+          i {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+
+        .movie__review {
+          gap: 0.5rem;
+          i {
+            font-size: 1.6rem;
+          }
+        }
+
+        .movie__date {
+          font-size: 1.6rem;
+        }
+      }
+
+      .movie__btns {
+        margin-top: 6rem;
+        padding-bottom: 2.4rem;
+        border-bottom: 1px solid $border-color;
+
+        .btn {
+          width: 100%;
+          font-size: 1.4rem;
+          padding: 1.5rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile-media {
+  section {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,22 @@
+.free {
+  background: var(--black-light-color);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.free p {
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.product-name {
+  background: var(--white-color);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.product-name p {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: var(--black-light-color);
+}

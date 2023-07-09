@@ -1,0 +1,91 @@
+@include large-devices {
+  .hero {
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .emoji {
+    position: absolute;
+    width: 150px;
+
+    &:nth-child(8) {
+      bottom: -35%;
+      left: 40%;
+    }
+    &:nth-child(7) {
+      bottom: 0;
+      right: -10%;
+    }
+
+    &:nth-child(4) {
+      top: 0;
+      right: 10%;
+    }
+
+    &:nth-child(5) {
+      top: 0;
+      left: 10%;
+    }
+    &:nth-child(6) {
+      bottom: 0;
+      left: -10%;
+    }
+  }
+}
+
+@include medium-devices {
+  .emoji {
+    position: absolute;
+    width: 150px;
+
+    &:nth-child(7) {
+      bottom: -35%;
+      right: 10%;
+    }
+
+    &:nth-child(6) {
+      bottom: -35%;
+      left: 10%;
+    }
+  }
+}
+
+@include small-devices {
+  .header {
+    &__buttons {
+      gap: 1rem;
+      .header__login {
+        display: none;
+      }
+
+      .header__login-mobile {
+        display: block;
+      }
+    }
+  }
+
+  .hero {
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: normal;
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+  }
+
+  .emoji {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}

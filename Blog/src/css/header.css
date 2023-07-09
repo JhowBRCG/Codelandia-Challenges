@@ -1,0 +1,66 @@
+header {
+  background: linear-gradient(to right, #574aeb, #3ea1db);
+  padding: 4.1rem 1rem;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-content p,
+a {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.wrapper-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7.3rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.header-content input {
+  width: 100%;
+  padding: 2.5rem 6rem;
+  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  position: relative;
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+.header-content input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  opacity: 0.5;
+}
+
+.input-wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/lupe.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 24px;
+  top: 26px;
+}
+
+.btn-heart {
+  cursor: pointer;
+}
+
+.heart {
+  font-size: 2.3rem;
+  color: #574aeb;
+}

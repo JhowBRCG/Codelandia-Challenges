@@ -1,0 +1,35 @@
+@import url("style.css");
+
+:root {
+  font-size: 62.5%;
+
+  --color-green: #04c35c;
+  --color-blue: #2b6cb0;
+  --color-dark: #1a202c;
+  --color-grey: #f7fafc;
+  --color-white: #fff;
+
+  --default-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: var(--color-blue);
+}

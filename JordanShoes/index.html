@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/global.css" />
+    <title>Jordan Shoes</title>
+  </head>
+  <body>
+    <header>
+      <div class="free">
+        <p>Ganhe R$ 10,00 de desconto no frete</p>
+      </div>
+      <div class="product-name">
+        <p>JordanShoes</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <article class="hero-article">
+          <h1 class="title">A melhor loja de Jordan</h1>
+          <p class="description">
+            O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e
+            o jogador Michael Jordan.
+          </p>
+        </article>
+      </section>
+
+      <section class="highlights">
+        <h2>Destaques</h2>
+        <p>
+          Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.
+        </p>
+        <div class="wrapper-cards">
+          <article class="jordan-card">
+            <img src="src/assets/1.png" alt="Jordan 1" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/2.png" alt="Jordan 2" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/3.png" alt="Jordan 3" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/4.png" alt="Jordan 4" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/5.png" alt="Jordan 5" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/6.png" alt="Jordan 6" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/7.png" alt="Jordan 7" />
+          </article>
+          <article class="jordan-card">
+            <img src="src/assets/8.png" alt="Jordan 8" />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+
+      ScrollReveal().reveal(".hero", { delay: 200 });
+      ScrollReveal().reveal(".highlights", { delay: 400 });
+    </script>
+  </body>
+</html>

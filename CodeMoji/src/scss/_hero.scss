@@ -1,0 +1,64 @@
+.hero {
+  padding-top: 10rem;
+  position: relative;
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  h1 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 7rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 20rem;
+    gap: 5rem;
+
+    .emoji__button {
+      @include button($blue-color, $white-color);
+    }
+
+    .labrary__button {
+      @include button($white-color, $dark-color);
+    }
+  }
+}
+
+.emoji {
+  position: absolute;
+  width: 150px;
+
+  &:nth-child(8) {
+    bottom: -35%;
+    left: 45%;
+  }
+  &:nth-child(7) {
+    bottom: 0;
+    right: 10%;
+  }
+
+  &:nth-child(4) {
+    top: 0;
+    right: 10%;
+  }
+
+  &:nth-child(5) {
+    top: 0;
+    left: 10%;
+  }
+  &:nth-child(6) {
+    bottom: 0;
+    left: 10%;
+  }
+}
