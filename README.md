@@ -23,7 +23,12 @@
 * ScrollReveal
 
 ---
-<!--- 
+
 ## Creators
---- >
+
+| Author | Designer |
+| :----: | :----: | 
+| <a target="_blank" href="https://github.com/JhowBRCG"><img width="125" src="https://avatars.githubusercontent.com/u/121911885?v=4"><br></a> | <a target="_blank" href="https://github.com/iuricode"><img width="125" src="https://avatars.githubusercontent.com/u/31936044?v=4"></a> |
+| JhowBRCG | iuricode | 
+
 
