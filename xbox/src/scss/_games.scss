@@ -1,0 +1,18 @@
+.games {
+  display: flex;
+
+  &__card {
+    position: relative;
+    .card-logo {
+      position: absolute;
+      bottom: 7%;
+      left: 15%;
+      //   width: 300px;
+      //   height: 60px;
+    }
+
+    .card-logo.fifa {
+      left: 30%;
+    }
+  }
+}
