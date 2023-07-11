@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: $white-color;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+
+  font-weight: 600;
+  background: $dark-10;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 5rem 0;
+}

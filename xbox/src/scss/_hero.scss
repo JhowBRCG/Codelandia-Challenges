@@ -1,0 +1,45 @@
+.hero {
+  padding-top: 10rem;
+
+  h1 {
+    text-align: center;
+    font-size: 7.2rem;
+  }
+
+  p {
+    color: $brand-color;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4.8rem;
+  }
+
+  &__img {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      background: rgba($brand-color, 0.2);
+      filter: blur(150px);
+      z-index: -1;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(0deg, #0d0d0d 10%, rgba(13, 13, 13, 0) 100%);
+    }
+  }
+}

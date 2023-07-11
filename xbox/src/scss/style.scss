@@ -1,0 +1,15 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "header";
+@import "hero";
+@import "controller";
+
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: $brand-color;
+}
