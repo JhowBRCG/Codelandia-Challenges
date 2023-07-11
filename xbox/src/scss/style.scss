@@ -5,6 +5,7 @@
 @import "hero";
 @import "controller";
 @import "games";
+@import "faq";
 
 .container {
   width: $desktop-width;
@@ -13,4 +14,12 @@
 
 .highlight {
   color: $brand-color;
+}
+
+.show {
+  display: block;
+}
+
+.down {
+  transform: rotate(180deg);
 }

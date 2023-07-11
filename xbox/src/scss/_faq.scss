@@ -1,0 +1,47 @@
+.faq {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  display: grid;
+  gap: 2rem;
+
+  h2 {
+    font-size: 4.8rem;
+    margin-bottom: 6rem;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2rem solid #2e2e2e;
+    cursor: pointer;
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+
+    .card-answer {
+      display: none;
+      padding-left: 1rem;
+      padding-bottom: 3rem;
+      margin-top: 3.6rem;
+      overflow: hidden;
+
+      p {
+        color: $dark-30;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+
+    .card-answer.show {
+      display: block;
+    }
+
+    .arrow-card {
+      img {
+      }
+    }
+  }
+}
