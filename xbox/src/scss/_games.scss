@@ -3,6 +3,17 @@
 
   &__card {
     position: relative;
+    overflow: hidden;
+
+    .card-img {
+      img {
+        transition: all 200ms linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
     .card-logo {
       position: absolute;
       bottom: 7%;
