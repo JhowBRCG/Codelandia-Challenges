@@ -7,10 +7,17 @@
 @import "games";
 @import "faq";
 @import "footer";
+@import "responsive";
 
 .container {
   width: $desktop-width;
   margin: 0 auto;
+}
+
+@include largeDevices {
+  .container {
+    width: $mobile-width;
+  }
 }
 
 .highlight {

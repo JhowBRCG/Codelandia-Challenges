@@ -17,9 +17,13 @@
   }
 
   &__img {
-    width: 1000px;
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
+    width: fit-content;
+
+    img {
+      max-width: 1000px;
+    }
 
     &::before {
       content: "";
