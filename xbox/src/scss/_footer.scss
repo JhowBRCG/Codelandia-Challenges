@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rem;
+  padding-bottom: 8rem;
+
+  &__rights {
+    display: flex;
+    gap: 5.5rem;
+
+    p {
+      color: $dark-20;
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+  }
+}
