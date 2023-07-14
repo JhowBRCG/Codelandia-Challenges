@@ -1,0 +1,54 @@
+.challenges {
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 3.5rem;
+
+  &__challenge-card {
+    background: $card-color;
+    border: 1px solid $border-color;
+    padding: 1.2rem 1.2rem;
+    border-radius: $border-radius;
+    width: 100%;
+    overflow: hidden;
+
+    .challenge-card__img {
+      img {
+        border-radius: $border-radius;
+        transition: all 200ms linear;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      margin: 1.4rem 0;
+    }
+
+    .challenge-card__actions {
+      display: flex;
+      gap: 1.3rem;
+
+      .live {
+        @include actionCard($primary-color, $secondary-color);
+
+        &:hover {
+          background: darken($primary-color, 10%);
+        }
+      }
+
+      .code {
+        @include actionCard($secondary-color, $dark-color-opacity);
+
+        &:hover {
+          background: darken($secondary-color, 10%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  padding-top: 5rem;
+  &__nav {
+    .action {
+      padding: 0.7rem 4.7rem;
+      font-size: 2rem;
+      border: 1px solid $primary-color;
+      border-radius: $border-radius;
+    }
+  }
+}

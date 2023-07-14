@@ -1,0 +1,18 @@
+@mixin actionCard($background, $color) {
+  background: $background;
+  color: $color;
+  padding: 0.7rem 2.8rem;
+  border-radius: $border-radius;
+}
+
+@mixin mediumDevices {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin smallDevices {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}

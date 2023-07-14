@@ -1,0 +1,20 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "header";
+@import "hero";
+@import "about";
+@import "challenges";
+@import "footer";
+@import "responsive";
+
+.container {
+  width: $large-width;
+  margin: 0 auto;
+}
+
+@include mediumDevices {
+  .container {
+    width: $small-width;
+  }
+}

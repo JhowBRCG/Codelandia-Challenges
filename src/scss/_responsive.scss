@@ -1,0 +1,31 @@
+@include mediumDevices {
+  .header {
+    &__nav {
+      display: grid;
+      justify-content: center;
+    }
+  }
+
+  .about {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 3rem;
+    }
+  }
+
+  .challenges {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include smallDevices {
+  .hero {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
